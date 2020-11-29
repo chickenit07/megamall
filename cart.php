@@ -24,9 +24,6 @@ session_start();
 
 <div id="maincontainer">
 <?php
-//<!-- Slider Start-->
-include('views/user/blocks/slider.php');
-//<!-- Slider End-->
 
 //<!-- Section Start-->
 include('views/user/blocks/otherdetail.php');
@@ -39,11 +36,6 @@ $pageControl->viewCartPage();
 <?php
     //<!-- Footer -->
 include('views/user/blocks/footer.html');
-
-    //<!-- javascript
-       // ================================================== -->
-    //<!-- Placed at the end of the document so the pages load faster -->
-include('views/user/blocks/scripts.html');
 ?>
 </body>
 </html>
