@@ -39,7 +39,7 @@
         <!-- Sidebar Start-->
         <div class="span3">
           <aside>
-            <div class="sidewidt">
+            <div class="side-width">
               <h2 class="heading2"><span>Contact Info</span></h2>
               <p> Lorem Ipsum is simply<br>
                 Lorem Ipsum is simply<br>

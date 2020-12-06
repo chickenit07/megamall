@@ -5,19 +5,19 @@
     <ul class="thumbnails">
       <?php foreach($latest_product as $item){ ?>
         <li class="span3">
-		  <a class='productname' href="<?php echo 'detail/'.$item['alias'].'-'.$item['id'].'.html'; ?>">
+		  <a class='product-name' href="<?php echo 'detail.php?id=' . $item['id']; ?>">
 			  <?php echo $item['name'] ?>
 		  </a>
           <div class="thumbnail">
-			<a href="<?php echo 'detail.php?alias='.$item['alias'].'&id='. $item['id']; ?>">
+			<a href="<?php echo 'detail.php?id='. $item['id']; ?>">
 				<img alt='' src="resources/upload/<?php echo $item['image']?>">
 			</a>
             <div class="pricetag">
               <span class="spiral"></span>
               <?php echo "<a href='routes/add_to_cart.php?id=".$item['id']."' class='productcart'>ADD TO CART</a>"; ?>
               <div class="price">
-                <?php echo "<div class='pricenew'>".number_format($item['price'],0,",",".")."</div>"; ?>
-                <div class="priceold">123.456</div>
+                <?php echo "<div class='price-new'>".number_format($item['price'],0,",",".")."</div>"; ?>
+                <div class="price-old">123.456</div>
               </div>
             </div>
           </div>
@@ -36,16 +36,16 @@
       foreach($random_product as $item){
         ?>
         <li class="span3">
-          <a class='productname' href="<?php echo 'detail/'.$item['alias'].'-'.$item['id'].'.html'; ?>"><?php echo $item['name'] ?></a>
+          <a class='product-name' href="<?php echo 'detail.php?id=' .$item['id']; ?>"><?php echo $item['name'] ?></a>
           <div class="thumbnail">
-            <a href="<?php echo 'detail.php?alias='.$item['alias'].'&id='. $item['id']; ?>"><img alt='' src="resources/upload/<?php echo $item['image'] ?>"></a>
+            <a href="<?php echo 'detail.php?id='. $item['id']; ?>"><img alt='' src="resources/upload/<?php echo $item['image'] ?>"></a>
             <div class="pricetag">
               <span class="spiral"></span>
               <?php echo "<a href='routes/add_to_cart.php?id=".$item['id']."' class='productcart'>ADD TO CART</a>"; ?>
               <div class="price">
-              <?php echo "<div class='pricenew'>".number_format($item['price'],0,",",".")."</div>";
+              <?php echo "<div class='price-new'>".number_format($item['price'],0,",",".")."</div>";
               ?>
-                <div class="priceold"></div>
+                <div class="price-old"></div>
               </div>
             </div>
           </div>

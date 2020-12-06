@@ -27,12 +27,11 @@
           if ($product_cart != null)
           foreach($product_cart as $item) { ?>
           <tr>
-            <td class="image"><a href="<?php echo 'chi-tiet/'.$item['alias'].'-'.$item['id'].'.html'; ?>"><img title="product" alt="product" <?php echo 'src="resources/upload/'.$item['image'].'"' ?> height="50" width="50"></a></td>
-            <td class="name"><a href="<?php echo 'chi-tiet/'.$item['alias'].'-'.$item['id'].'.html'; ?>"><?php echo $item["name"] ?></a></td>
+            <td class="image"><a href="<?php echo 'detail?id=' . $item['id']; ?>"><img title="product" alt="product" <?php echo 'src="resources/upload/'.$item['image'].'"' ?> height="50" width="50"></a></td>
+            <td class="name"><a href="<?php echo 'detail?id='. $item['id']; ?>"><?php echo $item["name"] ?></a></td>
             <td class="quantity"><input class="span1 qty" type="text" size="1" <?php echo 'value="'.$item["quantity"].'"' ?> name="quantity[40]" />
             </td>
             <td class="total"> 
-              <a href="#" class="updatecart" <?php echo 'id="'.$item['id'].'"' ?> ><img class="tooltip-test" data-original-title="Update" src="public/user/img/update.png" alt=""></a>
               <a href="<?php echo 'routes/del_product_cart.php?id='.$item['id'] ?>"><img class="tooltip-test" data-original-title="Remove"  src="public/user/img/remove.png" alt=""></a>
             </td>
            
@@ -48,8 +47,8 @@
           <div class="span4 pull-right">
             <table class="table table-striped table-bordered ">
               <tr>
-                <td><span class="extra bold totalamout">Total :</span></td>
-                <td><span class="bold totalamout"><?php echo number_format($total,0,",",".") ?></span></td>
+                <td><span class="extra bold total-amount">Total :</span></td>
+                <td><span class="bold total-amount"><?php echo number_format($total,0,",",".") ?></span></td>
               </tr>
             </table>
             <input type="submit" value="CheckOut" class="btn btn-orange pull-right">

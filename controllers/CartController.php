@@ -37,5 +37,4 @@ class CartController {
 		$this->storeCartToSession();
 	}
 }
-
 ?>

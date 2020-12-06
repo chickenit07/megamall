@@ -27,7 +27,7 @@
                 );
                 $this->product_list[] = $product_cart;
             }
-            var_dump($this->product_list);
+            // var_dump($this->product_list);
         }
 
         public function update($product_id, $quantity){

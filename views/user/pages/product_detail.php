@@ -17,34 +17,34 @@
         <div class="span7">
           <div class="row">
             <div class="span7">
-              <h1 class="productname"><span class="bgnone"><?php echo $product_detail['name'] ?></span></h1>
-              <div class="productprice">
+              <h1 class="product-name"><span class="bgnone"><?php echo $product_detail['name'] ?></span></h1>
+              <div class="product-price">
                 <div class="productpageprice">
                   <span class="spiral"></span>
                   <?php echo number_format($product_detail['price'],0,",",".") ?>
                 </div>
               </div>
-              <ul class="productpagecart">
+              <ul class="product-page-cart">
                 <li><a class="cart" href="<?php echo 'routes/add_to_cart.php?id='.$product_detail['id'] ?>">ADD TO CART</a></li>
               </ul>
          <!-- Product Description tab & comments-->
-         <div class="productdesc">
+         <div class="product-description">
                 <ul class="nav nav-tabs" id="myTab">
-                  <li class="active"><a href="#description">Description</a>
+                  <li class="active"><a href="">Description</a>
                   </li>
-                  <li><a href="#specification">Specification</a>
+                  <li><a href="">Specification</a>
                   </li>
-                  <li><a href="#review">Review</a>
+                  <li><a href="">Review</a>
                   </li>
-                  <li><a href="#producttag">Tags</a>
+                  <li><a href="">Tags</a>
                   </li>
                 </ul>
                 <div class="tab-content">
                   <div class="tab-pane active" id="description">
-                    <h2>h2 tag will be appear</h2>
+                    <h2>Product Information</h2>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum <br>
                     <br>
-                    <ul class="listoption3">
+                    <ul class="list-option3">
                       <li>Lorem ipsum dolor sit amet Consectetur adipiscing elit</li>
                       <li>Integer molestie lorem at massa Facilisis in pretium nisl aliquet</li>
                       <li>Nulla volutpat aliquam velit </li>
@@ -52,21 +52,21 @@
                     </ul>
                   </div>
                   <div class="tab-pane " id="specification">
-                    <ul class="productinfo">
+                    <ul class="product-info">
                       <li>
-                        <span class="productinfoleft"> Product Code:</span> Product 16 </li>
+                        <span class="product-infoleft"> Product Code:</span> Product 16 </li>
                       <li>
-                        <span class="productinfoleft"> Reward Points:</span> 60 </li>
+                        <span class="product-infoleft"> Reward Points:</span> 60 </li>
                       <li>
-                        <span class="productinfoleft"> Availability: </span> In Stock </li>
+                        <span class="product-infoleft"> Availability: </span> In Stock </li>
                       <li>
-                        <span class="productinfoleft"> Old Price: </span> $500.00 </li>
+                        <span class="product-infoleft"> Old Price: </span> $500.00 </li>
                       <li>
-                        <span class="productinfoleft"> Ex Tax: </span> $500.00 </li>
+                        <span class="product-infoleft"> Ex Tax: </span> $500.00 </li>
                       <li>
-                        <span class="productinfoleft"> Product Code:</span> Product 16 </li>
+                        <span class="product-infoleft"> Product Code:</span> Product 16 </li>
                       <li>
-                        <span class="productinfoleft"> Reward Points:</span> 60 </li>
+                        <span class="product-infoleft"> Reward Points:</span> 60 </li>
                     </ul>
                   </div>
                   <div class="tab-pane" id="review">
@@ -89,7 +89,7 @@
                       <input type="submit" class="btn btn-orange" value="continue">
                     </form>
                   </div>
-                  <div class="tab-pane" id="producttag">
+                  <div class="tab-pane" id="product-tag">
                     <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum <br>
                       <br>
                     </p>
