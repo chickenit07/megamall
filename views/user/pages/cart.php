@@ -32,7 +32,7 @@
             <td class="quantity"><input class="span1 qty" type="text" size="1" <?php echo 'value="'.$item["quantity"].'"' ?> name="quantity[40]" />
             </td>
             <td class="total"> 
-              <a href="<?php echo 'routes/del_product_cart.php?id='.$item['id'] ?>"><img class="tooltip-test" data-original-title="Remove"  src="public/user/img/remove.png" alt=""></a>
+              <a href="<?php echo 'routes/user/del_product_cart.php?id='.$item['id'] ?>"><img class="tooltip-test" data-original-title="Remove"  src="public/user/img/remove.png" alt=""></a>
             </td>
            
             <td class="price"><?php echo number_format($item["price"],0,",",".") ?></td>

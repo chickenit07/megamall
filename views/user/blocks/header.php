@@ -15,6 +15,8 @@
                   <li><a class="shoppingcart" href="cart.php">Shopping Cart</a>
                   </li>
                   <li><a class="checkout" href="#">CheckOut</a>
+				  </li>
+				  <li><a class="login" href="login.php">Login</a>
                   </li>
                 </ul>
               </div>

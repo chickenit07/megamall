@@ -25,7 +25,7 @@
                 </div>
               </div>
               <ul class="product-page-cart">
-                <li><a class="cart" href="<?php echo 'routes/add_to_cart.php?id='.$product_detail['id'] ?>">ADD TO CART</a></li>
+                <li><a class="cart" href="<?php echo 'routes/user/add_to_cart.php?id='.$product_detail['id'] ?>">ADD TO CART</a></li>
               </ul>
          <!-- Product Description tab & comments-->
          <div class="product-description">

@@ -11,27 +11,21 @@ $pageControl = new PageController();
 <body>
     <!-- Header Start -->
     <header>
-      <?php include("views/user/blocks/header.php"); ?>
+      <!-- <?php include("views/user/blocks/header.php"); ?> -->
       <div class="container">
-        <?php $pageControl->viewNavigation(); ?>
-    </div>
+	  </div>
 </header>
 <!-- Header End -->
 
 <div id="maincontainer">
 <?php
-//<!-- Section Start-->
-include('views/user/blocks/otherdetail.php');
-//<!-- Section End-->
-
-//@yield('content')
-$pageControl->viewProductDetailPage();
+    //@yield('content')
+    $pageControl->viewLoginPage();
 ?>
 </div>
 <?php
     //<!-- Footer -->
-include('views/user/blocks/footer.html');
-
+    include('views/user/blocks/footer.html');
 ?>
 </body>
 </html>

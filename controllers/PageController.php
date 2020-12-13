@@ -135,6 +135,10 @@ class PageController{
 	public function viewContactPage(){
 		include_once('views/user/pages/contact.php');
 	}
+
+	public function viewLoginPage(){
+		include_once('views/user/pages/login.php');
+	}
 }
 
 ?>

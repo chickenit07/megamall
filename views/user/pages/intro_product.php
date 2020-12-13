@@ -14,7 +14,7 @@
 			</a>
             <div class="pricetag">
               <span class="spiral"></span>
-              <?php echo "<a href='routes/add_to_cart.php?id=".$item['id']."' class='productcart'>ADD TO CART</a>"; ?>
+              <?php echo "<a href='routes/user/add_to_cart.php?id=".$item['id']."' class='productcart'>ADD TO CART</a>"; ?>
               <div class="price">
                 <?php echo "<div class='price-new'>".number_format($item['price'],0,",",".")."</div>"; ?>
                 <div class="price-old">123.456</div>
@@ -41,11 +41,11 @@
             <a href="<?php echo 'detail.php?id='. $item['id']; ?>"><img alt='' src="resources/upload/<?php echo $item['image'] ?>"></a>
             <div class="pricetag">
               <span class="spiral"></span>
-              <?php echo "<a href='routes/add_to_cart.php?id=".$item['id']."' class='productcart'>ADD TO CART</a>"; ?>
+              <?php echo "<a href='routes/user/add_to_cart.php?id=".$item['id']."' class='productcart'>ADD TO CART</a>"; ?>
               <div class="price">
               <?php echo "<div class='price-new'>".number_format($item['price'],0,",",".")."</div>";
               ?>
-                <div class="price-old"></div>
+                <div class="price-old">123.456</div>
               </div>
             </div>
           </div>
