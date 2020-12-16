@@ -1,6 +1,6 @@
 <?php 
 require_once(dirname(__DIR__).'/models/User.php');
-require_once(dirname(__DIR__).'/public/admin/functions.php');
+// require_once(dirname(__DIR__).'/public/admin/functions.php');
 class UserController{
 
 	public function addUser(){
@@ -54,6 +54,7 @@ class UserController{
 	public function checkLogin(){
 		$username=$_POST['username'];
 		$password=md5($_POST['password']);
+		// var_dump($password);die();
 		$login=User::checkLogin($username,$password);
 		if($login){
 			session_start();

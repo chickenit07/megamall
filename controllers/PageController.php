@@ -1,9 +1,9 @@
 <?php
-require_once("models/Product.php");
-require_once("models/ProductImage.php");
-require_once("models/Cate.php");
-require_once("models/User.php");
-require_once("models/Cart.php");
+require_once("./models/Product.php");
+require_once("./models/ProductImage.php");
+require_once("./models/Cate.php");
+require_once("./models/User.php");
+require_once("./models/Cart.php");
 
 class PageController{
 
@@ -57,66 +57,6 @@ class PageController{
 
 			$this->setPageTitle($product_detail['name']);
 			include_once('views/user/pages/product_detail.php');
-		}
-	}
-
-	public function viewAddCatePage(){
-		$cate_parent = Cate::getAllCate();
-		include_once 'public/admin/functions.php';
-		include_once('views/admin/add_cate.php');
-	}
-
-	public function viewListCatePage(){
-		$cates = Cate::getAllCate();
-		include_once('views/admin/list_cate.php');
-	}
-
-	public function viewEditCatePage(){
-		if(isset($_GET['id'])){
-			$cate_id=$_GET['id'];
-			$cate = Cate::getCateById($cate_id);
-			$cates = Cate::getAllCate();
-			include_once 'public/admin/functions.php';
-			include_once('views/admin/edit_cate.php');
-		}
-	}
-
-	public function viewAddUserPage(){
-		include_once('views/admin/add_user.php');
-	}
-
-	public function viewListUserPage(){
-		$users = User::getAllUser();
-		include_once('views/admin/list_user.php');
-	}
-
-	public function viewEditUserPage(){
-		if(isset($_GET['id'])){
-			$user_id=$_GET['id'];
-			$data = User::getUserById($user_id);
-			include_once('views/admin/edit_user.php');
-		}
-	}
-	public function viewAddProductPage(){
-		$cates = Cate::getAllCate();
-		include_once 'public/admin/functions.php';
-		include_once('views/admin/add_product.php');
-	}
-
-	public function viewListProductPage(){
-		$products = Product::getAllProduct();
-		//var_dump($products);
-		include_once('views/admin/list_product.php');
-	}
-
-	public function viewEditProductPage(){
-		if(isset($_GET['id'])){
-			$product_id=$_GET['id'];
-			$product = Product::getProductById($product_id);
-			$cates = Cate::getAllCate();
-			$product_images = ProductImage::getAllImageByProductId($product_id);
-			include_once 'public/admin/functions.php';
-			include_once('views/admin/edit_product.php');
 		}
 	}
 
