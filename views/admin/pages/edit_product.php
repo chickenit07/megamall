@@ -4,7 +4,7 @@
     .icon_del {position: relative; top: -70px; left: -20px;}
     #insert {margin-top: 20px;}
 </style>
-    <form action="routes/edit_product.php" method="POST" name="frmEditProduct" enctype="multipart/form-data">
+    <form action="../routes/admin/edit_product.php" method="POST" name="frmEditProduct" enctype="multipart/form-data">
         <div class="col-lg-7" style="padding-bottom:120px">
                 <!--@include('admin.blocks.error')-->
                 <input type="hidden" name="txtId" <?php echo 'value="'.$product["id"].'"' ?> />
@@ -43,7 +43,7 @@
                 </div>
                 <div class="form-group">
                     <label>Image Current</label>
-                    <img <?php echo 'src="resources/upload/'.$product['image'].'"' ?> class="img_current"/>
+                    <img <?php echo 'src="../resources/upload/'.$product['image'].'"' ?> class="img_current"/>
                     <input type="hidden" name="img_current" <?php echo 'value="'.$product['image'].'"' ?> />
                 </div>
                 <div class="form-group">
@@ -61,25 +61,5 @@
                 </div>
                 <button type="submit" class="btn btn-default">Product Edit</button>
                 <button type="reset" class="btn btn-default">Reset</button>
-            
         </div>
-<div class="col-md-1">
-
-</div>
-<div class="col-md-4">
-    <?php foreach($product_images as $key => $item){ ?>
-        <div class="form-group" <?php echo 'id="'.$key.'"' ?> >
-            <img 
-            <?php echo 'src="resources/upload/detail/'.$item['image'].'"' ?>
-            class="img_detail" 
-            <?php echo 'idHinh="'.$item['id'].'" id="'.$key.'"' ?>
-            />
-            <a href="javascript:void(0)" type="button" id="del_img_demo" class="btn btn-danger btn-circle icon_del"> 
-                <i class="fa fa-times"></i>
-            </a>
-        </div>
-    <?php } ?>
-    <button type="button" class="btn btn-primary" id="addImages">Add Images</button>
-    <div id="insert"> </div>
-</div>
 <form>

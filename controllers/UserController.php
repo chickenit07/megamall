@@ -8,7 +8,7 @@ class UserController{
 		if (!empty($username)) {
 			$password = md5($_POST['txtPass']);
 			$email = $_POST['txtEmail'];
-			$level = $_POST['rdoLevel'];
+			$level = $_POST['userLevel'];
 			$user = new User();
 			$user->setProperty(0,$username,$password,$email,$level);
 			User::addUser($user);
@@ -21,9 +21,8 @@ class UserController{
 		$id=$_POST['txtId'];
 		$username=$_POST['txtUser'];
 		$password=$_POST['txtPass'];
-		$re_password=$_POST['txtRePass'];
 		$email=$_POST['txtEmail'];
-		$level=$_POST['rdoLevel'];
+		$level=$_POST['userLevel'];
 		$password=md5($password);
 		$user = new User();
 		$user->setProperty($id,$username,$password,$email,$level);

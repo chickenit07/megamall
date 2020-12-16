@@ -17,15 +17,13 @@ $pageControl = new AdminPageController();
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">Dashboard
+                        <h1 class="page-header">Add new Category
                         </h1>
                     </div>
-                    <!-- /.col-lg-12 -->
-                    <div class="col-lg-12">
+					<div class="col-lg-12">
+                        <?php require_once('../views/admin/blocks/flash.php') ?>
                     </div>
-                    <!-- Đây là nơi chứa nội dung -->
-                    <?php $pageControl->viewDashboardPage() ?>
-                    <!-- End Đây là nơi chứa nội dung -->
+                    <?php $pageControl->viewAddUserPage() ?>
                 </div>
                 <!-- /.row -->
             </div>

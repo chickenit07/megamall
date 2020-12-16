@@ -19,14 +19,12 @@ $pageControl = new AdminPageController();
                     <div class="col-lg-12">
                         <h1 class="page-header">Edit Category
                         </h1>
-                    </div>
-                    <!-- /.col-lg-12 -->
-                    <div class="col-lg-12">
-                        
-                    </div>
-                    <!-- Đây là nơi chứa nội dung -->
+					</div>
+					<div class="col-lg-12">
+                        <?php require_once('../views/admin/blocks/flash.php') ?>
+					</div>
+					
                     <?php $pageControl->viewEditCatePage() ?>
-                    <!-- End Đây là nơi chứa nội dung -->
                 </div>
                 <!-- /.row -->
             </div>

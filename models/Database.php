@@ -74,5 +74,4 @@ class Database{
 		self::$conn=null;
 	}
 }
-
 ?>

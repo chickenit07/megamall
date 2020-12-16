@@ -29,7 +29,7 @@
             <?php echo "href='../routes/admin/delete_cate.php?id=".$cate['id']."'" ?>
             > Delete</a></td>
             <td class="center"><i class="fa fa-pencil fa-fw"></i> <a 
-            <?php echo "href='../routes/admin/edit_cate.php?id=".$cate['id']."'" ?>
+            <?php echo "href='edit_cate.php?id=".$cate['id']."'" ?>
             > Edit</a></td>
         </tr>
         <?php } ?>

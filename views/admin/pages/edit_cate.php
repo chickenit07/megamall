@@ -2,7 +2,7 @@
 <!-- /.col-lg-12 -->
 <div class="col-lg-7" style="padding-bottom:120px">
     <!--@include('admin.blocks.error')-->
-    <form action="routes/edit_cate.php" method="POST">
+    <form action="../routes/admin/edit_cate.php" method="POST">
         <input type="hidden" name="txtId" <?php echo 'value="'.$cate['id'].'"' ?>>
         <div class="form-group">
             <label>Category Parent</label>

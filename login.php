@@ -8,14 +8,13 @@ $pageControl = new PageController();
 <head>
     <?php  require_once('views/user/blocks/head.html'); ?>
 </head>
-<body>
-    <!-- Header Start -->
-    <header>
-      <!-- <?php include("views/user/blocks/header.php"); ?> -->
-      <div class="container">
-	  </div>
-</header>
 <!-- Header End -->
+<header>
+    <?php include("views/user/blocks/header.php"); ?>
+    <div class="navbar" style="left: 40%; font-size: 30px; margin: 20px">
+        <?php echo "Welcome to our shop!" ?>
+    </div>
+</header>
 
 <div id="maincontainer">
 <?php

@@ -16,15 +16,15 @@
         <tr class="odd gradeX" align="center">
             <td><?php echo $product["id"] ?></td>
             <td><?php echo $product["name"] ?></td>
-            <td><?php echo number_format($product["price"],0,",",".") ?> VNĐ</td>
+            <td><?php echo number_format($product["price"],0,",",".") ?> VND</td>
             <td><?php echo $product["cate_name"] ?></td>   
             <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a 
-            <?php echo "href='routes/delete_product.php?id=".$product['id']."'" ?>
-            onclick="return xacnhanxoa('Do you want to delele this product')"> Delete</a></td>
+            <?php echo "href='../routes/admin/delete_product.php?id=".$product['id']."'" ?>
+            onclick="return confirm('Are you sure?')"> Delete</a></td>
             <td class="center"><i class="fa fa-pencil fa-fw"></i> <a
-            <?php echo "href='sua-san-pham.php?id=".$product['id']."'" ?>
+            <?php echo "href='edit_product.php?id=".$product['id']."'" ?>
             >Edit</a></td>
         </tr>
-        <?php } ?>
+        <?php } ?>	
     </tbody>
 </table>

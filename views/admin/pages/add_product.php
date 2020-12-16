@@ -1,5 +1,5 @@
 
-<form action="routes/add_product.php" method="POST" enctype="multipart/form-data">
+<form action="../routes/add_product.php" method="POST" enctype="multipart/form-data">
     <div class="col-lg-7" style="padding-bottom:120px">
         <!-- @include('admin.blocks.error') -->
             <div class="form-group">
@@ -41,14 +41,5 @@
             </div>
             <button type="submit" class="btn btn-default">Product Add</button>
             <button type="reset" class="btn btn-default">Reset</button>
-    </div>
-    <div class="col-md-1"> </div>
-    <div class="col-md-4">
-        <?php for ($i=1; $i<=10; $i++){ ?>
-        <div class="form-group">
-            <label>Image product detail <?php echo $i ?></label>
-            <input type="file" name="fProductDetail[]"/>
-        </div>
-        <?php } ?>
     </div>
 </form>

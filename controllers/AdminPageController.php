@@ -12,7 +12,7 @@ class AdminPageController{
 
 	public function viewAddCatePage(){
 		$cate_parent = Cate::getAllCate();
-		include_once '../public/admin/functions.php';
+		include_once '../public/functions.php';
 		include_once('../views/admin/pages/add_cate.php');
 	}
 
@@ -53,14 +53,14 @@ class AdminPageController{
 
 	public function viewAddProductPage(){
 		$cates = Cate::getAllCate();
-		// include_once 'public/admin/functions.php';
+		include_once '../public/functions.php';
 		include_once('../views/admin/pages/add_product.php');
 	}
 
 	public function viewListProductPage(){
 		$products = Product::getAllProduct();
 		//var_dump($products);
-		include_once('../views/admin/list_product.php');
+		include_once('../views/admin/pages/list_product.php');
 	}
 
 	public function viewEditProductPage(){
@@ -69,7 +69,7 @@ class AdminPageController{
 			$product = Product::getProductById($product_id);
 			$cates = Cate::getAllCate();
 			$product_images = ProductImage::getAllImageByProductId($product_id);
-			// include_once '../public/admin/functions.php';
+			include_once '../public/functions.php';
 			include_once('../views/admin/pages/edit_product.php');
 		}
 	}

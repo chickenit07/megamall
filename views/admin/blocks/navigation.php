@@ -47,10 +47,10 @@ if (!isset($_SESSION['username'])) {
 					<a href="#"><i class="fa fa-cube fa-fw"></i> Product<span class="fa arrow"></span></a>
 					<ul class="nav nav-second-level">
 						<li>
-							<a href="danh-sach-san-pham.php">List Product</a>
+							<a href="list_product.php">List Product</a>
 						</li>
 						<li>
-							<a href="them-san-pham.php">Add Product</a>
+							<a href="add_product.php">Add Product</a>
 						</li>
 					</ul>
 					<!-- /.nav-second-level -->
@@ -59,10 +59,10 @@ if (!isset($_SESSION['username'])) {
 					<a href="#"><i class="fa fa-users fa-fw"></i> User<span class="fa arrow"></span></a>
 					<ul class="nav nav-second-level">
 						<li>
-							<a href="danh-sach-user.php">List User</a>
+							<a href="list_user.php">List User</a>
 						</li>
 						<li>
-							<a href="them-user.php">Add User</a>
+							<a href="add_user.php">Add User</a>
 						</li>
 					</ul>
 					<!-- /.nav-second-level -->

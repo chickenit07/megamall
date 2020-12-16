@@ -19,14 +19,12 @@ $pageControl = new AdminPageController();
                     <div class="col-lg-12">
                         <h1 class="page-header">Category List
                         </h1>
-                    </div>
-                    <!-- /.col-lg-12 -->
+					</div>
+					
                     <div class="col-lg-12">
                         <?php require_once('../views/admin/blocks/flash.php') ?>
                     </div>
-                    <!-- Đây là nơi chứa nội dung -->
                     <?php $pageControl->viewListCatePage() ?>
-                    <!-- End Đây là nơi chứa nội dung -->
                 </div>
                 <!-- /.row -->
             </div>

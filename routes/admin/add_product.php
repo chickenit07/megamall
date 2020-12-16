@@ -1,5 +1,5 @@
 <?php
-require_once('../controllers/ProductController.php');
+require_once('../../controllers/ProductController.php');
 $productControl = new ProductController();
 $productControl->addProduct();
 session_start();

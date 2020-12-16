@@ -1,7 +1,7 @@
 <?php 
 require_once(dirname(__DIR__)."/models/Product.php");
 require_once(dirname(__DIR__)."/models/ProductImage.php");
-require_once(dirname(__DIR__).'/public/admin/functions.php');
+require_once(dirname(__DIR__).'/public/functions.php');
 class ProductController{
 	
 	public function __construct(){
@@ -25,6 +25,7 @@ class ProductController{
 
 		//Upload image file
 		$target_dir=dirname(__DIR__)."/resources/upload/";
+		var_dump($target_dir);
 		if($image!=null){
 			$tmp_name=$_FILES['fImages']['tmp_name'];
 			move_uploaded_file($tmp_name, $target_dir.$image);

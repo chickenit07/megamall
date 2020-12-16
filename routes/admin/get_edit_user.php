@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once('../controllers/UserController.php');
+require_once('../../controllers/UserController.php');
 $userControl = new UserController();
 if ($userControl->getEditUser($_GET['id'])) {
 	header("Location: ../sua-user.php?id=".$_GET['id']);

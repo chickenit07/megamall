@@ -24,10 +24,10 @@
                     echo "Super Admin";
                 ?>
             </td>
-            <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a onclick="return xacnhanxoa('Bạn có chắc là muốn xóa ko?')" 
-            <?php echo "href='routes/delete_user.php?id=".$user['id']."'" ?> > Delete</a></td>
+            <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a onclick="return confirm('Are you sure?')" 
+            <?php echo "href='../routes/admin/delete_user.php?id=".$user['id']."'" ?> > Delete</a></td>
             <td class="center"><i class="fa fa-pencil fa-fw"></i> <a 
-            <?php echo "href='routes/get_edit_user.php?id=".$user['id']."'" ?> >Edit</a></td>
+            <?php echo "href='edit_user.php?id=".$user['id']."'" ?> >Edit</a></td>
         </tr>
         <?php } ?>
     </tbody>

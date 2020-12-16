@@ -1,10 +1,10 @@
 <div class="col-lg-7" style="padding-bottom:120px">
  <!--@include('admin.blocks.error')-->
- <form action="routes/add_cate.php" method="POST">
+ <form action="../routes/admin/add_cate.php" method="POST">
     <div class="form-group">
         <label>Category Parent</label>
         <select class="form-control" name="sltParent">
-            <option value="0">Please Choose Category</option>
+            <option value="0">It's parent category</option>
             <?php cate_parent($cate_parent); ?>
         </select>
     </div>
