@@ -1,6 +1,6 @@
 <?php
-require_once('../controllers/UserController.php');
-$userControl = new UserController();
+require_once('../../controllers/CustomerController.php');
+$userControl = new CustomerController();
 $login = $userControl->checkLogin();
 if ($login) {
 	header("Location: ../../index.php");

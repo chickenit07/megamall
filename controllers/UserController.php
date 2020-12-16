@@ -1,8 +1,8 @@
 <?php 
 require_once(dirname(__DIR__).'/models/User.php');
 // require_once(dirname(__DIR__).'/public/admin/functions.php');
-class UserController{
 
+class UserController{
 	public function addUser(){
 		$username = trim($_POST['txtUser']);
 		if (!empty($username)) {
