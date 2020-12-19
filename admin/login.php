@@ -10,18 +10,17 @@
     <title>Login</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="../public/admin/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../public/admin/bower_components/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="../public/admin/dist/css/sb-admin-2.css" rel="stylesheet">
+    <link href="../public/admin/css/sb-admin-2.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="../public/admin/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
+	
 </head>
 
 <body>
-
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
@@ -34,13 +33,13 @@
                     </div>
                     <div class="panel-body">
                         <?php include '../views/admin/blocks/error.php' ?>
-                        <form role="form" action="../routes/admin/check_login.php" method="POST" required pattern="[0-9a-zA-Z_.-]*">
+                        <form name="username" role="form" action="../routes/admin/check_login.php" onsubmit="return validateForm()" method="POST" >
                             <fieldset>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="Username" name="username" type="text" autofocus>
+                                    <input id="username-login-form" class="form-control" placeholder="Username" name="username" type="text" required autofocus>
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="Password" name="password" type="password" value="">
+                                    <input id = "password-login-form" class="form-control" placeholder="Password" name="password" type="password" required value="">
                                 </div>
                                 <button type="submit" class="btn btn-lg btn-success btn-block">Login</button>
                             </fieldset>
@@ -50,6 +49,6 @@
             </div>
         </div>
     </div>
+	<script type="text/javascript" src="../public/admin/js/validate.js"></script>
 </body>
-
 </html>
