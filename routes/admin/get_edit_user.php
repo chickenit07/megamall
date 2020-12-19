@@ -11,6 +11,6 @@ if ($userControl->getEditUser($_GET['id'])) {
 } else {
 	$_SESSION['flash_message'] = "Bạn ko có quyền sửa user này!";
 	$_SESSION['flash_level'] = "danger";
-	header("Location: ../danh-sach-user.php");
+	header("Location: ../../admin/list_user.php");
 }
 ?>

@@ -34,7 +34,7 @@
                     </div>
                     <div class="panel-body">
                         <?php include '../views/admin/blocks/error.php' ?>
-                        <form role="form" action="../routes/admin/check_login.php" method="POST">
+                        <form role="form" action="../routes/admin/check_login.php" method="POST" required pattern="[0-9a-zA-Z_.-]*">
                             <fieldset>
                                 <div class="form-group">
                                     <input class="form-control" placeholder="Username" name="username" type="text" autofocus>

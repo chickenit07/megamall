@@ -1,5 +1,5 @@
 
-<form action="../routes/add_product.php" method="POST" enctype="multipart/form-data">
+<form action="../routes/admin/add_product.php" method="POST" enctype="multipart/form-data">
     <div class="col-lg-7" style="padding-bottom:120px">
         <!-- @include('admin.blocks.error') -->
             <div class="form-group">
