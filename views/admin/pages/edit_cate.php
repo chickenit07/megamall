@@ -17,7 +17,7 @@
         </div>
         <div class="form-group">
             <label>Category Order</label>
-            <input class="form-control" name="txtOrder" placeholder="Please Enter Category Order" <?php echo 'value="'.$cate['order'].'"' ?> />
+            <input type="number" class="form-control" name="txtOrder" placeholder="Please Enter Category Order" <?php echo 'value="'.$cate['order'].'"' ?> />
         </div>
         <div class="form-group">
             <label>Category Keywords</label>

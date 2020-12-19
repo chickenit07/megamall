@@ -15,17 +15,15 @@
             </div>
             <div class="form-group">
                 <label>Price</label>
-                <input class="form-control" name="txtPrice" placeholder="Please Enter Price" value="" />
+                <input type="number" class="form-control" name="txtPrice" placeholder="Please Enter Price" value="" />
             </div>
             <div class="form-group">
                 <label>Intro</label>
                 <textarea class="form-control" rows="3" name="txtIntro"></textarea>
-                <script type="text/javascript"> ckeditor("txtIntro") </script>
             </div>
             <div class="form-group">
                 <label>Content</label>
                 <textarea class="form-control" rows="3" name="txtContent"></textarea>
-                <script type="text/javascript"> ckeditor("txtContent") </script>
             </div>
             <div class="form-group">
                 <label>Images</label>

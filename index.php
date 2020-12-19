@@ -1,6 +1,7 @@
 <?php
     include("controllers/PageController.php");
-    $pageControl = new PageController();
+	$pageControl = new PageController();
+	session_start();
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +21,6 @@
 
 <div id="maincontainer">
 <?php
-    //@yield('content')
     $pageControl->viewIndexPage();
 ?>
 </div>

@@ -1,5 +1,5 @@
 <div class="col-lg-7" style="padding-bottom:120px">
- <!--@include('admin.blocks.error')-->
+ @include('admin.blocks.error')
  <form action="../routes/admin/add_cate.php" method="POST">
     <div class="form-group">
         <label>Category Parent</label>
@@ -14,7 +14,7 @@
     </div>
     <div class="form-group">
         <label>Category Order</label>
-        <input class="form-control" name="txtOrder" placeholder="Please Enter Category Order" />
+        <input type="number"  class="form-control" name="txtOrder" placeholder="Please Enter Category Order" />
     </div>
     <div class="form-group">
         <label>Category Keywords</label>

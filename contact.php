@@ -1,6 +1,8 @@
 <?php
     include("controllers/PageController.php");
-    $pageControl = new PageController();
+	$pageControl = new PageController();
+	session_start();
+	
 ?>
 <!DOCTYPE html>
 <html lang="en">

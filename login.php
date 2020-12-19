@@ -11,9 +11,6 @@ $pageControl = new PageController();
 <!-- Header End -->
 <header>
     <?php include("views/user/blocks/header.php"); ?>
-    <div class="navbar" style="left: 40%; font-size: 30px; margin: 20px">
-        <?php echo "Welcome to our shop!" ?>
-    </div>
 </header>
 
 <div id="maincontainer">

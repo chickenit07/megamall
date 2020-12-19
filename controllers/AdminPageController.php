@@ -11,6 +11,7 @@ class AdminPageController{
 	}	
 
 	public function viewAddCatePage(){
+		
 		$cate_parent = Cate::getAllCate();
 		include_once '../public/functions.php';
 		include_once('../views/admin/pages/add_cate.php');

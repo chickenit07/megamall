@@ -1,7 +1,9 @@
 <?php 
 require_once(dirname(__DIR__).'/models/Customer.php');
-// require_once(dirname(__DIR__).'/public/admin/functions.php');
+require_once(dirname(__DIR__).'/public/functions.php');
 class CustomerController{
+	public function __construct(){
+	}	
 		public function checkLogin(){
 		$username=$_POST['username'];
 		$password=md5($_POST['password']);
@@ -9,7 +11,6 @@ class CustomerController{
 		if($login){
 			session_start();
 			$_SESSION['username']=$username;
-			$_SESSION['level']=$login['level'];
 			return true;
 		}
 		return false;

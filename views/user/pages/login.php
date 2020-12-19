@@ -9,13 +9,11 @@
     <title>Login Page</title>
 
 </head>
-
 <body>
 	<div class="container">
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
                 <div class="col-md-12">
-                    
                 </div>
                 <div class="login-panel panel panel-default">
                     <div class="panel-heading">
@@ -23,16 +21,14 @@
                     </div>
                     <div class="panel-body">
                         <?php include './views/admin/blocks/error.php' ?>
-                        <form role="form" action="routes/user/check_login.php" method="POST" required pattern="[0-9a-zA-Z_.-]*">
-                            <fieldset>
+                        <form role="form" action="./routes/user/check_login.php" method="POST">
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="Username" name="username" type="text" autofocus>
+                                    <input class="form-control" placeholder="Username" name="username" type="text" autofocus required>
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="Password" name="password" type="password" value="">
+                                    <input class="form-control" placeholder="Password" name="password" type="password" value="" required>
                                 </div>
-                                <button type="submit" class="btn btn-lg btn-success btn-block">Login</button>
-                            </fieldset>
+                                <button type="submit" class="btn btn-lg btn-success">Login</button>
                         </form>
                     </div>
                 </div>

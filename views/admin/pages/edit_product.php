@@ -24,7 +24,7 @@
                 </div>
                 <div class="form-group">
                     <label>Price</label>
-                    <input class="form-control" name="txtPrice" placeholder="Please Enter Password" 
+                    <input type="number" class="form-control" name="txtPrice" placeholder="Please Enter Price" 
                     <?php echo 'value="'.$product["price"].'"' ?> />
                 </div>
                 <div class="form-group">
@@ -32,14 +32,12 @@
                     <textarea class="form-control" rows="3" name="txtIntro">
                         <?php echo $product["intro"] ?>
                     </textarea>
-                    <script type="text/javascript">ckeditor('txtIntro')</script>
                 </div>
                 <div class="form-group">
                     <label>Content</label>
                     <textarea class="form-control" rows="3" name="txtContent">
                         <?php echo $product["content"] ?>
                     </textarea>
-                    <script type="text/javascript">ckeditor('txtContent')</script>
                 </div>
                 <div class="form-group">
                     <label>Image Current</label>

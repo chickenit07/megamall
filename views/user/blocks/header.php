@@ -17,10 +17,11 @@
   								<?php
 										if (!isset($_SESSION['username']))
 											echo '<li><a class="login" href="login.php">Login</a></li>';
-										else echo '<li><span> Welcome, ' . $_SESSION['username'] . '</span><li>
-  													<li><s class="logout href="logout.php>Log out </a></li>';									
+										else echo '<li>
+														<a Welcome ' . $_SESSION['username']. '</a>
+														  <a class="logout href="logout.php>Log out </a>
+												</li>';									
 										?>
-  								
   							</ul>
   						</div>
   					</div>
