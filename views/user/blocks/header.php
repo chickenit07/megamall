@@ -15,19 +15,30 @@
   								<li><a class="checkout" href="#">CheckOut</a>
   								</li>
   								<?php
-										if (!isset($_SESSION['username']))
-											echo '<li><a class="login" href="login.php">Login</a></li>';
-										else echo '<li>
-														<a Welcome ' . $_SESSION['username']. '</a>
-														  <a class="logout href="logout.php>Log out </a>
-												</li>';									
-										?>
+									if (!isset($_SESSION['username']))
+										echo '<li><a class="login" href="login.php">Login</a></li>';
+									else echo '<li>
+														<a Welcome ' . $_SESSION['username'] . '</a>
+														  <a class="logout" href="logout.php">Log out </a>
+												</li>';
+									?>
   							</ul>
   						</div>
   					</div>
   				</div>
   				<!-- Top Nav End -->
   			</div>
+  		</div>
+  		<div class="row">
+  			<div class="span12">
+  				<input type="text" class="form-control" style="width: 92%; margin:5px;" placeholder="Search...">
+  				<span class="input-group-btn">
+  					<button class="btn btn-default" type="button">
+  						<i class="fa fa-search"></i>
+  					</button>
+  				</span>
+  			</div>
+  			<!-- /input-group -->
   		</div>
   	</div>
   </div>
