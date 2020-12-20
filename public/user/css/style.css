@@ -702,3 +702,9 @@ left:70px
 margin-bottom:0px
 }
  }
+.product-name{
+	margin-bottom: 5px;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+}

@@ -8,7 +8,7 @@
           <!-- Category Products-->
           <section id="category">
             <div class="row">
-              <div class="span9">
+              <div class="span12">
                <!-- Category-->
                 <section id="category-id">
                   <ul class="thumbnails grid">
@@ -17,7 +17,7 @@
                       <a class="product-name" href="<?php echo 'detail.php?id='.$product['id']?>">
                       <?php echo $product['name'] ?></a>
                       <div class="thumbnail">
-                        <span class="sale tooltip-test">Sale</span>
+                        <!-- <span class="sale tooltip-test">Sale</span> -->
                         <a href="<?php echo 'detail.php?id='.$product['id']; ?>"><img alt="" src="<?php echo 'resources/upload/'.$product['image']; ?>"></a>
                         <div class="pricetag">
                           <span class="spiral"></span><a href="<?php echo 'routes/user/add_to_cart.php?id='.$product['id'];?>" class="productcart">ADD TO CART</a>

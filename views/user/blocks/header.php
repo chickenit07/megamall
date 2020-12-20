@@ -28,19 +28,19 @@
   				<!-- Top Nav End -->
   			</div>
   		</div>
-  		<div class="row">
-  			<script type="text/javascript" src="./public/user/js/validateSearch.js"></script>
-  			<div class="span12">
-  				<form action="./search-result.php" onsubmit="return validateForm()" method="get">
-  					<input id="search" name="search" type="text" class="form-control" style="width: 92%; margin:5px;" placeholder="Search...">
-  					<span class="input-group-btn">
-  						<button class="btn btn-default" type="submit">
-  							<i class="fa fa-search"></i>
-  						</button>
-  				</form>
-  				</span>
-  			</div>
-  			<!-- /input-group -->
-  		</div>
-  	</div>
-  </div>
+  		<div class="row" id="search-bar" >
+			  <div class="span12">
+				  <form action="./search-result.php" onsubmit="return validateForm()" method="get">
+				  <input id="search" name="search" type="text" class="form-control" style="width: 92%; margin:5px;" placeholder="Search...">
+				  <span class="input-group-btn">
+					  <button class="btn btn-default" type="submit">
+						  <i class="fa fa-search"></i>
+						</button>
+					</form>
+				</span>
+			</div>
+			<!-- /input-group -->
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="./public/user/js/validate.js"></script>
