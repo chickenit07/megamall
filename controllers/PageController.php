@@ -72,6 +72,8 @@ class PageController
 	{
 		$search = $_GET['search'];
 		if (isset($search)) {
+			$products = Product::getProductSearch($search);
+
 			$this->setPageTitle('Search Result');
 			include_once('views/user/pages/search_result.php');
 		}
