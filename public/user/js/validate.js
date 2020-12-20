@@ -14,7 +14,7 @@ var validateForm = () => {
 
   const validateLoginForm = () => {
 	  var username = document.getElementById("c-username").value;
-	  let regex = new RegExp("^[a-zA-Z0-9_]{4,}[a-zA-Z]+[0-9]*$");
+	  let regex = new RegExp("^[a-zA-Z0-9_]{3,}[a-zA-Z]+[0-9]*$");
 	  
 	  debugger
 	  if (!regex.test(username)) {

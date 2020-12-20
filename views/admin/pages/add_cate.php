@@ -9,15 +9,15 @@
     </div>
     <div class="form-group">
         <label>Category Name</label>
-        <input class="form-control" name="txtCateName" placeholder="Please Enter Category Name"/>
+        <input class="form-control" name="txtCateName" placeholder="Please Enter Category Name" required/>
     </div>
     <div class="form-group">
         <label>Category Order</label>
-        <input type="number"  class="form-control" name="txtOrder" placeholder="Please Enter Category Order" />
+        <input type="number"  class="form-control" name="txtOrder" placeholder="Please Enter Category Order" required/>
     </div>
     <div class="form-group">
         <label>Category Keywords</label>
-        <input class="form-control" name="txtKeywords" placeholder="Please Enter Category Keywords" />
+        <input class="form-control" name="txtKeywords" placeholder="Please Enter Category Keywords" required/>
     </div>
     <div class="form-group">
         <label>Category Description</label>
