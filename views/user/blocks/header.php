@@ -19,6 +19,8 @@
 										echo '<li><a class="login" href="login.php">Login</a></li>';
 									else echo '<li><a class="logout" href="logout.php">Log out as ' .$_SESSION['username'] . '</a></li>';
 									?>
+									<li>
+									</li>
   							</ul>
   						</div>
   					</div>
