@@ -17,10 +17,7 @@
   								<?php
 									if (!isset($_SESSION['username']))
 										echo '<li><a class="login" href="login.php">Login</a></li>';
-									else echo '<li>
-														<a Welcome ' . $_SESSION['username'] . '</a>
-														  <a class="logout" href="logout.php">Log out </a>
-												</li>';
+									else echo '<li><a class="logout" href="logout.php">Log out as ' .$_SESSION['username'] . '</a></li>';
 									?>
   							</ul>
   						</div>
@@ -30,9 +27,9 @@
   			</div>
   		</div>
   		<div class="row">
-		  <script type="text/javascript" src="./public/user/js/validateSearch.js"></script>
+  			<script type="text/javascript" src="./public/user/js/validateSearch.js"></script>
   			<div class="span12">
-  				<form action="./search-result.php" onsubmit="return validateForm()"  method="get">
+  				<form action="./search-result.php" onsubmit="return validateForm()" method="get">
   					<input id="search" name="search" type="text" class="form-control" style="width: 92%; margin:5px;" placeholder="Search...">
   					<span class="input-group-btn">
   						<button class="btn btn-default" type="submit">
@@ -45,4 +42,3 @@
   		</div>
   	</div>
   </div>
-  
