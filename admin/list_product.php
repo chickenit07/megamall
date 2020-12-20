@@ -2,7 +2,6 @@
 require_once('../controllers/AdminPageController.php');
 $pageControl = new AdminPageController();
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

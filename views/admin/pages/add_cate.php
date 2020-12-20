@@ -10,7 +10,7 @@
     </div>
     <div class="form-group">
         <label>Category Name</label>
-        <input class="form-control" name="txtCateName" placeholder="Please Enter Category Name" />
+        <input class="form-control" name="txtCateName" placeholder="Please Enter Category Name"/>
     </div>
     <div class="form-group">
         <label>Category Order</label>

@@ -51,7 +51,7 @@
                 <td><span class="bold total-amount"><?php echo number_format($total,0,",",".") ?></span></td>
               </tr>
             </table>
-            <input type="submit" value="CheckOut" class="btn btn-orange pull-right">
+            <input type="submit" value="Place Order" class="btn btn-orange pull-right">
             <a class="btn btn-orange pull-right mr10" href="<?php echo $_SERVER['HTTP_REFERER'] ?>">Continue Shopping</a>
           </div>
         </div>

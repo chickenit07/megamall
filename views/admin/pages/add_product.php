@@ -4,18 +4,18 @@
         <!-- @include('admin.blocks.error') -->
             <div class="form-group">
                 <label>Category Parent</label>
-                <select class="form-control" name="sltParent">
+                <select class="form-control" name="sltParent" required>
                     <option value="">Please Choose Category</option>
                     <?php cate_parent($cates); ?>
                 </select>
             </div>
             <div class="form-group">
                 <label>Name</label>
-                <input class="form-control" name="txtName" placeholder="Please Enter Name" value="" />
+                <input class="form-control" name="txtName" placeholder="Please Enter Name" value="" required />
             </div>
             <div class="form-group">
                 <label>Price</label>
-                <input type="number" class="form-control" name="txtPrice" placeholder="Please Enter Price" value="" />
+                <input type="number" class="form-control" name="txtPrice" placeholder="Please Enter Price" value="" required/>
             </div>
             <div class="form-group">
                 <label>Intro</label>
@@ -27,11 +27,11 @@
             </div>
             <div class="form-group">
                 <label>Images</label>
-                <input type="file" name="fImages" value="" >
+                <input type="file" name="fImages" value="" required>
             </div>
             <div class="form-group">
                 <label>Product Keywords</label>
-                <input class="form-control" name="txtKeywords" placeholder="Please Enter Category Keywords" value="" />
+                <input class="form-control" name="txtKeywords" placeholder="Please Enter Category Keywords" value="" required/>
             </div>
             <div class="form-group">
                 <label>Product Description</label>

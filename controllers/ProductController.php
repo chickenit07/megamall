@@ -9,8 +9,11 @@ class ProductController{
 	}
 
 	public function addProduct(){
+		
 		$name=$_POST['txtName'];
+		
 		$alias=changeTitle($name);
+		
 		$price=$_POST['txtPrice'];
 		$cate_id=$_POST['sltParent'];
 		$intro=$_POST['txtIntro'];
@@ -22,7 +25,6 @@ class ProductController{
 		$product = new Product();
 		$product->setProperties(0,$name,$alias,$price,$intro,$content,$image,$keywords,$description,$user_id,$cate_id);
 		$product_id=Product::addProductGetId($product);
-
 		//Upload image file
 		$target_dir=dirname(__DIR__)."/resources/upload/";
 		var_dump($target_dir);
@@ -30,7 +32,7 @@ class ProductController{
 			$tmp_name=$_FILES['fImages']['tmp_name'];
 			move_uploaded_file($tmp_name, $target_dir.$image);
 		}
-
+		
 		//Upload detail image files
 		for($i=0;$i<10;$i++){
 			$image_detail=$_FILES['fProductDetail']['name'][$i];

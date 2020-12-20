@@ -30,21 +30,6 @@
                     </li>
                     <?php } ?>
                   </ul>
-                  <div class="pagination pull-right">
-                    <ul>
-                      <?php if($pagination->currentPage != 1) {?>
-                      <li><a href="<?php echo 'product-cate.php?page='.($pagination->currentPage - 1).'&id='.$cate['id']; ?>">Prev</a></li>
-                      <?php }
-                      for($i=1; $i<=$pagination->lastPage ;  $i++) { ?>
-                      <li class="<?php echo ($pagination->currentPage == $i) ? 'active':'' ?>">
-                        <a href="<?php echo 'product-cate.php?page='.$i.'&id=' . $cate['id']; ?>"><?php echo $i ?></a>
-                      </li>
-                      <?php }
-                      if($pagination->currentPage != $pagination->lastPage) {?>
-                      <li><a href="<?php echo 'product-cate.php?page='.($pagination->currentPage + 1).'&id='.$cate['id']; ?>">Next</a></li>
-                      <?php } ?>
-                    </ul>
-                  </div>
                 </section>
               </div>
             </div>
