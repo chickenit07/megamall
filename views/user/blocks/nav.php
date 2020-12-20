@@ -11,10 +11,10 @@
 			<?php
 			foreach ($menus as $menu)
 				if ($menu['parent_id'] == 0) {
-					$menu_level1 = ($menu['has_sub'] == 'true') ? $menus[$menu['sub_cate'][0]] : $menu; 
-					?>
+					$menu_level1 = ($menu['has_sub'] == 'true') ? $menus[$menu['sub_cate'][0]] : $menu;
+			?>
 				<li>
-					<a href="<?php echo 'product-cate.php?id='. $menu_level1['id'] ?>">
+					<a href="<?php echo 'product-cate.php?id=' . $menu_level1['id'] ?>">
 						<?php echo $menu['name']; ?>
 					</a>
 					<?php
@@ -26,7 +26,7 @@
 									$menu_level2 = $menus[$menu_level2_id];
 								?>
 									<li>
-										<a href="<?php echo 'product-cate.php?id=' . $menu_level2['id']?>"><?php echo $menu_level2['name']; ?></a>
+										<a href="<?php echo 'product-cate.php?id=' . $menu_level2['id'] ?>"><?php echo $menu_level2['name']; ?></a>
 									<?php } ?>
 							</ul>
 						</div>
