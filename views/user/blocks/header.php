@@ -12,7 +12,7 @@
   								</li>
   								<li><a class="shoppingcart" href="cart.php">Shopping Cart</a>
   								</li>
-  								<li><a class="checkout" href="#">CheckOut</a>
+  								<li><a class="checkout" href="#">Place Order</a>
   								</li>
   								<?php
 									if (!isset($_SESSION['username']))

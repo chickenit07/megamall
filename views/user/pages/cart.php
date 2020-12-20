@@ -27,9 +27,9 @@
           if ($product_cart != null)
           foreach($product_cart as $item) { ?>
           <tr>
-            <td class="image"><a href="<?php echo 'detail?id=' . $item['id']; ?>"><img title="product" alt="product" <?php echo 'src="resources/upload/'.$item['image'].'"' ?> height="50" width="50"></a></td>
-            <td class="name"><a href="<?php echo 'detail?id='. $item['id']; ?>"><?php echo $item["name"] ?></a></td>
-            <td class="quantity"><input class="span1 qty" type="text" size="1" <?php echo 'value="'.$item["quantity"].'"' ?> name="quantity[40]" />
+            <td class="image"><a href="<?php echo 'detail.php?id=' . $item['id']; ?>"><img title="product" alt="product" <?php echo 'src="resources/upload/'.$item['image'].'"' ?> height="50" width="50"></a></td>
+            <td class="name"><a href="<?php echo 'detail.php?id='. $item['id']; ?>"><?php echo $item["name"] ?></a></td>
+            <td class="quantity"><?php echo $item["quantity"] ?>
             </td>
             <td class="total"> 
               <a href="<?php echo 'routes/user/del_product_cart.php?id='.$item['id'] ?>"><img class="tooltip-test" data-original-title="Remove"  src="public/user/img/remove.png" alt=""></a>
