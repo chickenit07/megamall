@@ -31,11 +31,13 @@
   		</div>
   		<div class="row">
   			<div class="span12">
-  				<input type="text" class="form-control" style="width: 92%; margin:5px;" placeholder="Search...">
-  				<span class="input-group-btn">
-  					<button class="btn btn-default" type="button">
-  						<i class="fa fa-search"></i>
-  					</button>
+  				<form action="./search-result.php" method="get">
+  					<input name="search" type="text" class="form-control" style="width: 92%; margin:5px;" placeholder="Search...">
+  					<span class="input-group-btn">
+  						<button class="btn btn-default" type="submit">
+  							<i class="fa fa-search"></i>
+  						</button>
+  				</form>
   				</span>
   			</div>
   			<!-- /input-group -->

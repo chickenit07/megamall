@@ -70,6 +70,10 @@ class Product{
 		return $product_detail;
 	}
 
+	public function getProductResult()
+	{
+		
+	}
 	public static function getProductImage($product_id){
 		$sql="select image from product_images where product_id='".$product_id."'";
 		$images = Database::selectAll($sql);
