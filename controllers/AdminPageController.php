@@ -21,7 +21,7 @@ class AdminPageController{
 		$cates = Cate::getAllCate();
 		include_once('../views/admin/pages/list_cate.php');
 	}
-
+	
 	public function viewEditCatePage(){
 		if(isset($_GET['id'])){
 			$cate_id=$_GET['id'];

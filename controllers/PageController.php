@@ -91,7 +91,7 @@ class PageController
 		$this->setPageTitle('My Cart');
 		include_once('views/user/pages/cart.php');
 	}
-
+	
 	public function viewContactPage()
 	{
 		include_once('views/user/pages/contact.php');

@@ -28,7 +28,7 @@ class Product{
 		$latest_product = Database::selectAll($sql);
 		return $latest_product;
 	}
-
+	
 	public static function getLatestProductCate($cate_id, $numberOfProduct){
 		$sql="select id,name,image,price,alias from products where cate_id = '".$cate_id."' order by id DESC limit ".$numberOfProduct."";
 		$latest_product = Database::selectAll($sql);
