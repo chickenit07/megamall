@@ -16,8 +16,8 @@
               <span class="spiral"></span>
               <?php echo "<a href='routes/user/add_to_cart.php?id=".$item['id']."' class='productcart'>ADD TO CART</a>"; ?>
               <div class="price">
-                <?php echo "<div class='price-new'>".number_format($item['price'],0,",",".")."</div>"; ?>
-                <div class="price-old">123.456</div>
+                <?php echo "<div class='pricenew'>".number_format($item['price'],0,",",".")."</div>"; ?>
+                <div class="priceold">123.456</div>
               </div>
             </div>
           </div>
@@ -43,9 +43,9 @@
               <span class="spiral"></span>
               <?php echo "<a href='routes/user/add_to_cart.php?id=".$item['id']."' class='productcart'>ADD TO CART</a>"; ?>
               <div class="price">
-              <?php echo "<div class='price-new'>".number_format($item['price'],0,",",".")."</div>";
+              <?php echo "<div class='pricenew'>".number_format($item['price'],0,",",".")."</div>";
               ?>
-                <div class="price-old">123.456</div>
+                <div class="priceold">123.456</div>
               </div>
             </div>
           </div>

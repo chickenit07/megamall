@@ -56,8 +56,8 @@
                         <div class="pricetag">
                           <span class="spiral"></span><a href="<?php echo 'routes/user/add_to_cart.php?id='.$item_product_cate['id'];?>" class="productcart">ADD TO CART</a>
                           <div class="price">
-                            <div class="price-new"><?php echo number_format($item_product_cate['price'],0,",",".") ?></div>
-                            <div class="price-old"></div>
+                            <div class="pricenew"><?php echo number_format($item_product_cate['price'],0,",",".") ?></div>
+                            <div class="priceold"></div>
                           </div>
                         </div>
                       </div>
